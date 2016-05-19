@@ -12,7 +12,7 @@ public class MediaPlayer extends Thread {
     private int currentTrackNumber = 0;
     byte playerState; // 0 - stopped, 1 - playing, 2 - paused
     Player zoomPlayer;
-    Playlist playlist = new Playlist("/home/markx/Музыка/item.txt");
+    Playlist playlist = new Playlist("C:\\Users\\markx\\Desktop\\Projects\\IdeaProjects\\PLAYER\\SuperPlayer\\item.txt");
 
     public MediaPlayer(String playlistPath) {
         playlist = new Playlist(playlistPath);

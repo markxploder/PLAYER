@@ -11,7 +11,7 @@ public class Interface extends JFrame
 {
     MediaPlayer player = new MediaPlayer("/home/markx/Музыка/item.txt");
 
-    Interface(String s) throws FileNotFoundException, JavaLayerException {
+    Interface(String s) throws FileNotFoundException {
         super(s);
         setLayout(null);
         setSize(400, 180);
@@ -34,7 +34,7 @@ public class Interface extends JFrame
         pl.addActionListener(
                 event -> new MediaPlayer("/home/markx/Музыка/item.txt"));
     }
-    public void actionPerformed(ActionEvent event) throws FileNotFoundException, JavaLayerException {
+    public void actionPerformed(ActionEvent event) throws FileNotFoundException {
         player.start();
     }
 }
